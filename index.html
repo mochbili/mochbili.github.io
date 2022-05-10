@@ -28,6 +28,8 @@
     />
     <!-- /Google Fonts -->
 
+    <link rel="shortcut icon" href="img/icon2.png" type="image/x-icon" />
+
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="css/base.css?ver=3" />
     <link type="text/css" rel="stylesheet" href="css/owl-carousel.css?ver=3" />
@@ -766,10 +768,11 @@
                   <!-- Contact Form -->
                   <form
                     class="contact_form"
-                    action="/"
-                    method="post"
                     autocomplete="off"
                     data-email="mochhbili@gmail.com"
+                    action="https://app.99inbound.com/api/e/5Ou6aP5E"
+                    method="POST"
+                    target="_blank"
                   >
                     <!--
 									Don't remove below code in avoid to work contact form properly.
@@ -788,24 +791,34 @@
                       <div class="items">
                         <div class="item half">
                           <div class="input_wrapper">
-                            <input id="name" type="text" />
+                            <input id="name" name="name" type="text" required />
                             <span class="moving_placeholder">Name *</span>
                           </div>
                         </div>
                         <div class="item half">
                           <div class="input_wrapper">
-                            <input id="email" type="email" />
+                            <input
+                              id="email"
+                              name="email"
+                              type="email"
+                              required
+                            />
                             <span class="moving_placeholder">Email *</span>
                           </div>
                         </div>
                         <div class="item">
                           <div class="input_wrapper">
-                            <textarea id="message"></textarea>
+                            <textarea
+                              id="message"
+                              name="message"
+                              required
+                            ></textarea>
                             <span class="moving_placeholder">Message</span>
                           </div>
                         </div>
                         <div class="item">
-                          <a id="send_message" href="#">Send Message</a>
+                          <!-- <a id="send_message" href="#">Send Message</a> -->
+                          <button class="send">Send Message</button>
                         </div>
                       </div>
                     </div>
@@ -818,11 +831,12 @@
                     <h3>Bandung, Indonesia</h3>
                     <p>Skype</p>
                     <h3><a href="skype:+7068980751">mochbili</a></h3>
-                    <p>
-                      <a class="fn__link" href="mailto:frenifyteam@gmail.com"
+                    <p>eMail</p>
+                    <h3>
+                      <a href="mailto:frenifyteam@gmail.com"
                         >mochbili@gmail.com</a
                       >
-                    </p>
+                    </h3>
                   </div>
                   <!-- /Contact Info -->
                 </div>
